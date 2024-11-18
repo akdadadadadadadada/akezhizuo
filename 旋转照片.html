@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片集</title>
+    <style>
+        div{
+            height: 500px;
+            position: relative;
+            margin: 100px 0 ;
+            transform-style: preserve-3d;
+            animation: rotate 9s linear infinite;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotateX(0) rotateY(0);
+            }
+            25%{
+                transform: rotateX(10deg) rotateY(90deg);
+            }
+            50%{
+                transform: rotateX(0) rotateY(180deg);
+            }
+            75%{
+                transform: rotateX(-10deg) rotateY(270deg);
+            }
+            to{
+                transform: rotateX(0) rotateY(360deg);
+            }
+        }
+        img{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 300px;
+        }
+        img:first-child {
+            transform: translateZ(700px);
+        }
+        img:nth-child(2){
+            transform: rotateY(30deg) translateZ(700px);
+        }
+        img:nth-child(3){
+            transform: rotateY(60deg) translateZ(700px);
+        }
+        img:nth-child(4){
+            transform: rotateY(90deg) translateZ(700px);
+        }
+        img:nth-child(5){
+            transform: rotateY(120deg) translateZ(700px);
+        }
+        img:nth-child(6){
+            transform: rotateY(150deg) translateZ(700px);
+        }
+        img:nth-child(7){
+            transform: rotateY(180deg) translateZ(700px);
+        }
+        img:nth-child(8){
+            transform: rotateY(210deg) translateZ(700px);
+        }
+        img:nth-child(9){
+            transform: rotateY(240deg) translateZ(700px);
+        }
+        img:nth-child(10){
+            transform: rotateY(270deg) translateZ(700px);
+        }
+        img:nth-child(11){
+            transform: rotateY(300deg) translateZ(700px);
+        }
+        img:nth-child(12){
+            transform: rotateY(330deg) translateZ(700px);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="./png01/照片1.jpg" alt="">
+    <img src="./png01/照片2.jpg" alt="" height="400">
+    <img src="./png01/照片3.jpg" alt="">
+    <img src="./png01/照片4.jpg" alt="">
+    <img src="./png01/照片5.jpg" alt="">
+    <img src="./png01/照片6.jpg" alt="" height="400">
+    <img src="./png01/照片7.jpg" alt="">
+    <img src="./png01/照片8.jpg" alt="">
+    <img src="./png01/照片9.jpg" alt="">
+    <img src="./png01/照片10.jpg" alt="">
+    <img src="./png01/照片11.jpg" alt="">
+    <img src="./png01/照片12.jpg" alt="">
+</div>
+
+</body>
+</html>
